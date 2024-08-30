@@ -18,13 +18,13 @@ function getWeatherIcon(wmoCode) {
   return icons.get(arr);
 }
 
-function convertToFlag(countryCode) {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt());
-  return String.fromCodePoint(...codePoints);
-}
+// function convertToFlag(countryCode) {
+//   const codePoints = countryCode
+//     .toUpperCase()
+//     .split("")
+//     .map((char) => 127397 + char.charCodeAt());
+//   return String.fromCodePoint(...codePoints);
+// }
 
 function formatDay(dateStr) {
   return new Intl.DateTimeFormat("en", {
